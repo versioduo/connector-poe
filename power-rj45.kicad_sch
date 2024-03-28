@@ -2551,9 +2551,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2651,8 +2651,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2671,9 +2671,9 @@
 		)
 		(symbol "power:Earth"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2692,7 +2692,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
@@ -2784,8 +2783,8 @@
 			(symbol "Earth_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "Earth"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2804,9 +2803,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2880,8 +2879,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2963,7 +2962,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3979,6 +3978,10 @@
 					(reference "#PWR0110")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0110")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3986,7 +3989,7 @@
 		(lib_id "V2_Production:Layer_Numbers")
 		(at 228.6 165.1 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4036,9 +4039,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 228.6 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "INFO101")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "INFO101")
 					(unit 1)
 				)
@@ -4105,6 +4121,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0121")
 					(unit 1)
 				)
@@ -4175,6 +4195,10 @@
 					(reference "#PWR0108")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0108")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4182,7 +4206,7 @@
 		(lib_id "V2_PCB_Devices:PCB_Plug_Horizontal")
 		(at 187.96 162.56 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4233,9 +4257,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 187.96 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "PLUG102")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "PLUG102")
 					(unit 1)
 				)
@@ -4309,6 +4346,10 @@
 					(reference "TVS101")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "TVS101")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4374,6 +4415,10 @@
 					(reference "#PWR0122")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0122")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4381,7 +4426,7 @@
 		(lib_id "V2_PCB_Devices:PCB_Plug_Horizontal")
 		(at 187.96 148.59 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4432,9 +4477,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 187.96 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "PLUG101")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "PLUG101")
 					(unit 1)
 				)
@@ -4445,7 +4503,7 @@
 		(lib_id "V2_Connector_USB:JAE_DX07S016JA3")
 		(at 224.79 73.66 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -4494,6 +4552,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 224.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A5"
 			(uuid "bc5ba71a-02af-486f-ac99-56529e500eac")
 		)
@@ -4530,6 +4597,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "J103")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J103")
 					(unit 1)
 				)
@@ -4595,6 +4666,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0102")
 					(unit 1)
 				)
@@ -4665,6 +4740,10 @@
 					(reference "#PWR0106")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0106")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4732,6 +4811,10 @@
 					(reference "#PWR0107")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0107")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4739,7 +4822,7 @@
 		(lib_id "V2_Artwork:Plus")
 		(at 252.7351 148.6963 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4790,9 +4873,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.7351 148.6963 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON103")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON103")
 					(unit 1)
 				)
@@ -4861,6 +4957,10 @@
 					(reference "#PWR0113")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0113")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4926,6 +5026,10 @@
 					(reference "#PWR0103")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0103")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4933,7 +5037,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 140.97 173.99 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -4982,12 +5086,25 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 140.97 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3374c576-7cb5-425e-be38-c00801ed5675")
 		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "J109")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J109")
 					(unit 1)
 				)
@@ -4998,7 +5115,7 @@
 		(lib_id "V2_Artwork:Socket")
 		(at 252.73 179.07 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5050,9 +5167,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.73 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON108")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON108")
 					(unit 1)
 				)
@@ -5063,7 +5193,7 @@
 		(lib_id "V2_Connector_EtherCon:NE8FAH")
 		(at 54.61 54.61 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5112,6 +5242,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 54.61 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f5e0d436-e8fb-447b-90ca-fd33017a58a4")
 		)
@@ -5142,6 +5281,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "J102")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J102")
 					(unit 1)
 				)
@@ -5214,6 +5357,10 @@
 					(reference "C102")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "C102")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5221,7 +5368,7 @@
 		(lib_id "V2_Connector_Header_1.27mm:2x05_Horizontal")
 		(at 123.19 53.34 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5269,6 +5416,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 123.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a2826bf-03c9-403f-af3c-53e656b5dbd9")
 		)
@@ -5305,6 +5461,10 @@
 					(reference "J101")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "J101")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5312,7 +5472,7 @@
 		(lib_id "V2_Production:Order_Number")
 		(at 228.6 176.53 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5361,9 +5521,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 228.6 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "INFO102")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "INFO102")
 					(unit 1)
 				)
@@ -5374,7 +5547,7 @@
 		(lib_id "V2_Artwork:Minus")
 		(at 252.6135 168.9745 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5425,9 +5598,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.6135 168.9745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON104")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON104")
 					(unit 1)
 				)
@@ -5500,6 +5686,10 @@
 					(reference "R101")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "R101")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5569,6 +5759,10 @@
 					(reference "R102")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "R102")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5576,7 +5770,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.225 152.4 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5626,9 +5820,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 276.225 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "FID101")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "FID101")
 					(unit 1)
 				)
@@ -5697,6 +5904,10 @@
 					(reference "#PWR0101")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0101")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5762,6 +5973,10 @@
 					(reference "#FLG0101")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#FLG0101")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5769,7 +5984,7 @@
 		(lib_id "V2_Artwork:Minus")
 		(at 252.7602 143.5776 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5820,9 +6035,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.7602 143.5776 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON101")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON101")
 					(unit 1)
 				)
@@ -5833,7 +6061,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 140.97 170.18 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5882,12 +6110,25 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 140.97 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "35fb1a86-2e95-4cd8-85af-00c72378a872")
 		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "J108")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J108")
 					(unit 1)
 				)
@@ -5898,7 +6139,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 115.57 173.99 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5947,12 +6188,25 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 115.57 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cd1636de-afdc-4010-be44-dbea5f694bdd")
 		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "J107")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J107")
 					(unit 1)
 				)
@@ -6021,6 +6275,10 @@
 					(reference "#FLG0102")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#FLG0102")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6028,7 +6286,7 @@
 		(lib_id "V2_Connector_Header_1.27mm:2x05_Horizontal")
 		(at 123.19 91.44 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6076,6 +6334,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 123.19 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3ce15cd3-489d-4c72-8f45-54fa5ea3beed")
 		)
@@ -6109,6 +6376,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "J104")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J104")
 					(unit 1)
 				)
@@ -6177,6 +6448,10 @@
 					(reference "#PWR0115")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0115")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6242,6 +6517,10 @@
 					(reference "#PWR0123")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0123")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6249,7 +6528,7 @@
 		(lib_id "V2_Artwork:24V")
 		(at 252.73 162.56 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6301,9 +6580,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.73 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON107")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON107")
 					(unit 1)
 				)
@@ -6372,6 +6664,10 @@
 					(reference "#PWR0105")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0105")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6437,6 +6733,10 @@
 					(reference "#PWR0124")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0124")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6444,7 +6744,7 @@
 		(lib_id "V2_Artwork:5V")
 		(at 252.73 137.16 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6496,9 +6796,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.73 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON106")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON106")
 					(unit 1)
 				)
@@ -6509,7 +6822,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.225 165.1 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6558,9 +6871,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 276.225 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "FID102")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "FID102")
 					(unit 1)
 				)
@@ -6571,7 +6897,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 115.57 170.18 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6620,12 +6946,25 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 115.57 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "244f3eeb-9f6b-4eb3-a492-7c5ee5bc845f")
 		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "J106")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J106")
 					(unit 1)
 				)
@@ -6636,7 +6975,7 @@
 		(lib_id "V2_Connector_EtherCon:NE8FAH")
 		(at 54.61 92.71 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6685,6 +7024,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 54.61 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0faf81f-2706-4ee5-b759-79a2c331eb4b")
 		)
@@ -6718,6 +7066,10 @@
 					(reference "J105")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "J105")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6725,7 +7077,7 @@
 		(lib_id "V2_Artwork:Plug")
 		(at 252.73 153.67 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6777,9 +7129,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.73 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON109")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON109")
 					(unit 1)
 				)
@@ -6848,6 +7213,10 @@
 					(reference "#PWR0109")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0109")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6855,7 +7224,7 @@
 		(lib_id "V2_Artwork:Plus")
 		(at 252.7232 174.0157 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6906,9 +7275,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 252.7232 174.0157 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON105")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON105")
 					(unit 1)
 				)
@@ -6977,6 +7359,10 @@
 					(reference "#PWR0125")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0125")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6984,7 +7370,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.225 176.53 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7034,9 +7420,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 276.225 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "FID103")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "FID103")
 					(unit 1)
 				)
@@ -7105,6 +7504,10 @@
 					(reference "#PWR0104")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0104")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -7170,6 +7573,10 @@
 					(reference "#FLG0103")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#FLG0103")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -7177,7 +7584,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 228.6 148.59 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7227,9 +7634,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 228.6 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON102")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON102")
 					(unit 1)
 				)

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Power Supply")
-		(date "2023-08-08")
-		(rev "3")
+		(date "2024-03-28")
+		(rev "4")
 		(company "+5V")
 	)
 	(lib_symbols
@@ -303,8 +303,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 5.08 -17.78 0)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpsm33625.pdf"
+				(at 2.286 -40.386 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -444,7 +444,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 12.7 7.62 180)
 					(length 2.54)
 					(name "VOUT"
@@ -516,7 +516,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin output line
 					(at -12.7 -2.54 0)
 					(length 2.54)
 					(name "VCC"
@@ -534,7 +534,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "FB"
@@ -556,9 +556,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -656,8 +656,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -676,9 +676,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -752,90 +752,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -851,33 +769,7 @@
 					)
 				)
 			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
 		)
-	)
-	(junction
-		(at 166.37 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "130fc113-7aff-4cf8-b35d-56d37175a9d7")
-	)
-	(junction
-		(at 127 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "407bd2f1-7600-4f60-8278-3d7e98f4e7d8")
 	)
 	(junction
 		(at 185.42 95.25)
@@ -983,7 +875,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 105.41) (xy 135.89 105.41)
+			(xy 128.27 105.41) (xy 135.89 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1023,16 +915,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 95.25) (xy 172.72 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e330aaf9-fc47-4c64-992a-9606e6c99271")
-	)
-	(wire
-		(pts
 			(xy 172.72 95.25) (xy 185.42 95.25)
 		)
 		(stroke
@@ -1053,7 +935,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 95.25) (xy 166.37 95.25)
+			(xy 161.29 95.25) (xy 172.72 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1126,72 +1008,6 @@
 			(justify right)
 		)
 		(uuid "701c1ae1-7ebc-4e84-9acc-9d780ce81a5c")
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 166.37 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11842624-50af-4a66-a1cf-504f71770862")
-		(property "Reference" "#FLG0301"
-			(at 166.37 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 166.37 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 166.37 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8362f823-b862-4b77-8e97-e1e37374f7f0")
-		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#FLG0301")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "V2_Converter_DCDC:TPSM33625")
@@ -1888,7 +1704,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 127 107.95 0)
+		(at 128.27 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1896,7 +1712,7 @@
 		(dnp no)
 		(uuid "6f72d12b-3fd7-4fef-b38d-6a1a01607885")
 		(property "Reference" "C305"
-			(at 119.38 106.68 0)
+			(at 120.65 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1905,7 +1721,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 119.38 109.22 0)
+			(at 120.65 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1914,7 +1730,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 127 107.95 0)
+			(at 128.27 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1923,7 +1739,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 107.95 0)
+			(at 128.27 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1932,7 +1748,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 107.95 0)
+			(at 128.27 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2026,7 +1842,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 110.49 0)
+		(at 128.27 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2034,7 +1850,7 @@
 		(dnp no)
 		(uuid "77fc86a4-b71b-42cd-a914-f7257b900b65")
 		(property "Reference" "#PWR0307"
-			(at 127 116.84 0)
+			(at 128.27 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2043,7 +1859,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 115.57 90)
+			(at 128.27 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2051,7 +1867,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 110.49 0)
+			(at 128.27 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2060,7 +1876,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 110.49 0)
+			(at 128.27 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2069,7 +1885,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 110.49 0)
+			(at 128.27 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2153,72 +1969,6 @@
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "R302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 127 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aab8c5ba-7ff7-4dd4-bc3f-505a897bd64d")
-		(property "Reference" "#FLG0302"
-			(at 127 103.505 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 127 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 127 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d7a2da9-52b4-4648-9946-2adce953ff39")
-		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#FLG0302")
 					(unit 1)
 				)
 			)

@@ -773,9 +773,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -849,8 +849,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -932,7 +932,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1278,6 +1278,10 @@
 					(reference "Q201")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "Q201")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1340,6 +1344,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
+					(reference "#FLG0201")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#FLG0201")
 					(unit 1)
 				)
@@ -1430,6 +1438,10 @@
 					(reference "U201")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "U201")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1496,6 +1508,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
+					(reference "R201")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "R201")
 					(unit 1)
 				)
@@ -1568,6 +1584,10 @@
 					(reference "C201")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "C201")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1637,6 +1657,10 @@
 					(reference "R202")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "R202")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1703,6 +1727,10 @@
 					(reference "#PWR0202")
 					(unit 1)
 				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
+					(reference "#PWR0202")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1765,6 +1793,10 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
+					(reference "#PWR0201")
+					(unit 1)
+				)
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0201")
 					(unit 1)
 				)
