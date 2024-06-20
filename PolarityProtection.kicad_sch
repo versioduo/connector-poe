@@ -1278,10 +1278,6 @@
 					(reference "Q201")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "Q201")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -1329,7 +1325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 167.64 86.36 0)
 			(effects
 				(font
@@ -1344,10 +1340,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "#FLG0201")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#FLG0201")
 					(unit 1)
 				)
@@ -1399,7 +1391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Reverse Polarity Protection Controller"
 			(at 151.13 106.68 0)
 			(effects
 				(font
@@ -1435,10 +1427,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "U201")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "U201")
 					(unit 1)
 				)
@@ -1490,7 +1478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 121.92 111.76 0)
 			(effects
 				(font
@@ -1508,10 +1496,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "R201")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "R201")
 					(unit 1)
 				)
@@ -1563,7 +1547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 135.89 101.6 0)
 			(effects
 				(font
@@ -1581,10 +1565,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "C201")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "C201")
 					(unit 1)
 				)
@@ -1636,7 +1616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 121.92 116.84 0)
 			(effects
 				(font
@@ -1654,10 +1634,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "R202")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "R202")
 					(unit 1)
 				)
@@ -1709,7 +1685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 151.13 119.38 0)
 			(effects
 				(font
@@ -1724,10 +1700,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "#PWR0202")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0202")
 					(unit 1)
 				)
@@ -1778,7 +1750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 121.92 119.38 0)
 			(effects
 				(font
@@ -1793,10 +1765,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "#PWR0201")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0201")
 					(unit 1)
 				)

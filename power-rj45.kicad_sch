@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 power RJ45")
-		(date "2023-08-08")
-		(rev "3")
+		(date "2024-06-20")
+		(rev "4")
 		(company "Versio Duo")
 		(comment 1 "Power Supply")
 	)
@@ -427,7 +427,7 @@
 				)
 			)
 		)
-		(symbol "V2_Artwork:Minus"
+		(symbol "V2_Artwork:Arrow_Out"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -440,7 +440,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "Minus"
+			(property "Value" "Arrow_Out"
 				(at -2.54 -5.08 0)
 				(effects
 					(font
@@ -450,7 +450,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "V2_Artwork:Minus_Small"
+			(property "Footprint" "V2_Artwork:Arrow_Out"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -495,10 +495,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "Minus_0_1"
+			(symbol "Arrow_Out_0_1"
 				(polyline
 					(pts
-						(xy -1.27 0) (xy 1.27 0)
+						(xy 0 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0.508) (xy 2.54 0) (xy 2.032 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -2993,6 +3005,126 @@
 				)
 			)
 		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 217.17 93.98)
@@ -3061,6 +3193,12 @@
 		(uuid "d44fdbe3-aa60-43f7-b47a-cdd1d8fe9226")
 	)
 	(junction
+		(at 237.49 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed29dbf9-c1a8-4c1c-a14d-2cbc8cccd73c")
+	)
+	(junction
 		(at 64.77 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3073,10 +3211,6 @@
 	(no_connect
 		(at 129.54 91.44)
 		(uuid "38bd0cc8-6615-4f60-b7cc-ba8a6201380c")
-	)
-	(no_connect
-		(at 237.49 58.42)
-		(uuid "4a2346ab-bb55-4eb3-955f-1cc012407023")
 	)
 	(no_connect
 		(at 129.54 88.9)
@@ -3960,7 +4094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 116.84 88.9 0)
 			(effects
 				(font
@@ -3978,10 +4112,6 @@
 					(reference "#PWR0110")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0110")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -3989,7 +4119,7 @@
 		(lib_id "V2_Production:Layer_Numbers")
 		(at 228.6 165.1 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4039,22 +4169,9 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 228.6 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "INFO101")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "INFO101")
 					(unit 1)
 				)
@@ -4106,7 +4223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 59.69 167.64 0)
 			(effects
 				(font
@@ -4121,10 +4238,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0121")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0121")
 					(unit 1)
 				)
@@ -4177,7 +4290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 255.27 66.04 0)
 			(effects
 				(font
@@ -4195,10 +4308,6 @@
 					(reference "#PWR0108")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0108")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4206,7 +4315,7 @@
 		(lib_id "V2_PCB_Devices:PCB_Plug_Horizontal")
 		(at 187.96 162.56 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4257,22 +4366,9 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 187.96 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "PLUG102")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "PLUG102")
 					(unit 1)
 				)
@@ -4346,10 +4442,6 @@
 					(reference "TVS101")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "TVS101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4397,7 +4489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 80.01 167.64 0)
 			(effects
 				(font
@@ -4415,10 +4507,6 @@
 					(reference "#PWR0122")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0122")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4426,7 +4514,7 @@
 		(lib_id "V2_PCB_Devices:PCB_Plug_Horizontal")
 		(at 187.96 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4477,8 +4565,27 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 187.96 148.59 0)
+		(instances
+			(project "power-rj45"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "PLUG101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 237.49 58.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c6e4de2-4c44-4d4c-8271-c1b745fe0845")
+		(property "Reference" "#PWR0111"
+			(at 233.68 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4486,14 +4593,49 @@
 				(hide yes)
 			)
 		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "PLUG101")
-					(unit 1)
+		(property "Value" "VBUS"
+			(at 241.3 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "PLUG101")
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c3429dc-28a9-4eeb-b561-4dfecd02d499")
+		)
+		(instances
+			(project ""
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -4503,13 +4645,13 @@
 		(lib_id "V2_Connector_USB:JAE_DX07S016JA3")
 		(at 224.79 73.66 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "41195de9-f1d3-4b20-abc5-7b3bdcc257bc")
 		(property "Reference" "J103"
-			(at 217.17 50.8 0)
+			(at 218.694 45.974 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4517,7 +4659,7 @@
 			)
 		)
 		(property "Value" "JAE_DX07S016JA3"
-			(at 214.63 53.34 0)
+			(at 216.154 48.514 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4544,15 +4686,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.79 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 224.79 73.66 0)
 			(effects
 				(font
@@ -4597,10 +4730,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "J103")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J103")
 					(unit 1)
 				)
@@ -4651,7 +4780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 116.84 50.8 0)
 			(effects
 				(font
@@ -4666,10 +4795,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0102")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0102")
 					(unit 1)
 				)
@@ -4722,7 +4847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 255.27 63.5 0)
 			(effects
 				(font
@@ -4737,10 +4862,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0106")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0106")
 					(unit 1)
 				)
@@ -4793,7 +4914,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 217.17 93.98 0)
 			(effects
 				(font
@@ -4811,10 +4932,6 @@
 					(reference "#PWR0107")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0107")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4822,7 +4939,7 @@
 		(lib_id "V2_Artwork:Plus")
 		(at 252.7351 148.6963 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -4873,22 +4990,9 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 252.7351 148.6963 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON103")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON103")
 					(unit 1)
 				)
@@ -4939,7 +5043,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 129.54 93.98 0)
 			(effects
 				(font
@@ -4954,10 +5058,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0113")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0113")
 					(unit 1)
 				)
@@ -5008,7 +5108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 129.54 50.8 0)
 			(effects
 				(font
@@ -5026,10 +5126,6 @@
 					(reference "#PWR0103")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0103")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5037,7 +5133,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 140.97 173.99 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5086,25 +5182,12 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 140.97 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "3374c576-7cb5-425e-be38-c00801ed5675")
 		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "J109")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J109")
 					(unit 1)
 				)
@@ -5115,7 +5198,7 @@
 		(lib_id "V2_Artwork:Socket")
 		(at 252.73 179.07 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5167,8 +5250,64 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 252.73 179.07 0)
+		(instances
+			(project "power-rj45"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_Artwork:Arrow_Out")
+		(at 252.73 166.37 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d6debc0-d60c-42fa-b0f5-8ee79162d389")
+		(property "Reference" "ICON111"
+			(at 256.54 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Arrow_Out"
+			(at 250.19 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "V2_Artwork:Arrow_Out"
+			(at 252.73 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5179,11 +5318,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON108")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "ICON108")
+					(reference "ICON111")
 					(unit 1)
 				)
 			)
@@ -5193,7 +5328,7 @@
 		(lib_id "V2_Connector_EtherCon:NE8FAH")
 		(at 54.61 54.61 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5242,15 +5377,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 54.61 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "f5e0d436-e8fb-447b-90ca-fd33017a58a4")
 		)
@@ -5281,10 +5407,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "J102")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J102")
 					(unit 1)
 				)
@@ -5336,7 +5458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 80.01 165.1 0)
 			(effects
 				(font
@@ -5357,10 +5479,6 @@
 					(reference "C102")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "C102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5368,7 +5486,7 @@
 		(lib_id "V2_Connector_Header_1.27mm:2x05_Horizontal")
 		(at 123.19 53.34 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5416,15 +5534,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 123.19 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8a2826bf-03c9-403f-af3c-53e656b5dbd9")
 		)
@@ -5461,10 +5570,6 @@
 					(reference "J101")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "J101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5472,7 +5577,7 @@
 		(lib_id "V2_Production:Order_Number")
 		(at 228.6 176.53 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5521,100 +5626,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 228.6 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
 					(reference "INFO102")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "INFO102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "V2_Artwork:Minus")
-		(at 252.6135 168.9745 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "814eba34-8685-45c3-89a9-13037af850df")
-		(property "Reference" "ICON104"
-			(at 255.7885 168.3395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Minus"
-			(at 255.7885 170.8795 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "V2_Artwork:Minus_Small"
-			(at 252.6135 176.5945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.6135 168.9745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.6135 168.9745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 252.6135 168.9745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON104")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "ICON104")
 					(unit 1)
 				)
 			)
@@ -5665,7 +5680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 252.73 63.5 0)
 			(effects
 				(font
@@ -5683,10 +5698,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "R101")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "R101")
 					(unit 1)
 				)
@@ -5738,7 +5749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 252.73 66.04 0)
 			(effects
 				(font
@@ -5759,10 +5770,6 @@
 					(reference "R102")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "R102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5770,7 +5777,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.225 152.4 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5811,16 +5818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 276.225 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 276.225 152.4 0)
 			(effects
 				(font
@@ -5832,10 +5830,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "FID101")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "FID101")
 					(unit 1)
 				)
@@ -5886,7 +5880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 44.45 0)
 			(effects
 				(font
@@ -5901,10 +5895,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0101")
 					(unit 1)
 				)
@@ -5955,7 +5945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 214.63 93.98 0)
 			(effects
 				(font
@@ -5973,87 +5963,6 @@
 					(reference "#FLG0101")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#FLG0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "V2_Artwork:Minus")
-		(at 252.7602 143.5776 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a745ab21-7f1a-47d0-9aec-aa4f94f8afa5")
-		(property "Reference" "ICON101"
-			(at 255.9352 142.9426 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Minus"
-			(at 255.9352 145.4826 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "V2_Artwork:Minus_Small"
-			(at 252.7602 151.1976 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.7602 143.5776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.7602 143.5776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 252.7602 143.5776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON101")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "ICON101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6061,7 +5970,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 140.97 170.18 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6110,15 +6019,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 140.97 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "35fb1a86-2e95-4cd8-85af-00c72378a872")
 		)
@@ -6128,8 +6028,69 @@
 					(reference "J108")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "J108")
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_Artwork:Arrow_Out")
+		(at 252.73 140.97 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad21618f-8d7e-4a55-81fd-ce7132c1aece")
+		(property "Reference" "ICON110"
+			(at 256.54 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Arrow_Out"
+			(at 250.19 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "V2_Artwork:Arrow_Out"
+			(at 252.73 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 252.73 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "power-rj45"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON110")
 					(unit 1)
 				)
 			)
@@ -6139,7 +6100,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 115.57 173.99 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6188,25 +6149,12 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 115.57 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "cd1636de-afdc-4010-be44-dbea5f694bdd")
 		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "J107")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J107")
 					(unit 1)
 				)
@@ -6257,7 +6205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 50.8 160.02 0)
 			(effects
 				(font
@@ -6275,10 +6223,6 @@
 					(reference "#FLG0102")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#FLG0102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6286,7 +6230,7 @@
 		(lib_id "V2_Connector_Header_1.27mm:2x05_Horizontal")
 		(at 123.19 91.44 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6334,15 +6278,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 123.19 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "3ce15cd3-489d-4c72-8f45-54fa5ea3beed")
 		)
@@ -6376,10 +6311,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "J104")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J104")
 					(unit 1)
 				)
@@ -6430,7 +6361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 224.79 93.98 0)
 			(effects
 				(font
@@ -6445,10 +6376,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0115")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0115")
 					(unit 1)
 				)
@@ -6499,7 +6426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 110.49 173.99 0)
 			(effects
 				(font
@@ -6517,10 +6444,6 @@
 					(reference "#PWR0123")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0123")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6528,7 +6451,7 @@
 		(lib_id "V2_Artwork:24V")
 		(at 252.73 162.56 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6580,22 +6503,9 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 252.73 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON107")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON107")
 					(unit 1)
 				)
@@ -6646,7 +6556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 129.54 55.88 0)
 			(effects
 				(font
@@ -6661,10 +6571,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0105")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0105")
 					(unit 1)
 				)
@@ -6715,7 +6621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 135.89 170.18 0)
 			(effects
 				(font
@@ -6733,10 +6639,6 @@
 					(reference "#PWR0124")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0124")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6744,7 +6646,7 @@
 		(lib_id "V2_Artwork:5V")
 		(at 252.73 137.16 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6796,22 +6698,9 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 252.73 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON106")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON106")
 					(unit 1)
 				)
@@ -6822,7 +6711,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.225 165.1 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -6862,16 +6751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 276.225 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 276.225 165.1 0)
 			(effects
 				(font
@@ -6886,10 +6766,6 @@
 					(reference "FID102")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "FID102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6897,7 +6773,7 @@
 		(lib_id "V2_Connector_WAGO:2065")
 		(at 115.57 170.18 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -6946,25 +6822,12 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 115.57 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "244f3eeb-9f6b-4eb3-a492-7c5ee5bc845f")
 		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "J106")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "J106")
 					(unit 1)
 				)
@@ -6975,7 +6838,7 @@
 		(lib_id "V2_Connector_EtherCon:NE8FAH")
 		(at 54.61 92.71 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -7024,15 +6887,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 54.61 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "e0faf81f-2706-4ee5-b759-79a2c331eb4b")
 		)
@@ -7066,10 +6920,6 @@
 					(reference "J105")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "J105")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7077,7 +6927,7 @@
 		(lib_id "V2_Artwork:Plug")
 		(at 252.73 153.67 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7129,22 +6979,9 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 252.73 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON109")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON109")
 					(unit 1)
 				)
@@ -7195,7 +7032,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 82.55 0)
 			(effects
 				(font
@@ -7213,10 +7050,6 @@
 					(reference "#PWR0109")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0109")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7224,7 +7057,7 @@
 		(lib_id "V2_Artwork:Plus")
 		(at 252.7232 174.0157 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7275,8 +7108,26 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 252.7232 174.0157 0)
+		(instances
+			(project "power-rj45"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 237.49 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eec76c30-1bed-4859-ad26-b6a7331ebdeb")
+		(property "Reference" "#FLG0104"
+			(at 237.49 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7284,14 +7135,48 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "PWR_FLAG"
+			(at 237.49 53.848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 237.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1a9264d-6bf8-4cc2-9a0e-f9bb61823632")
+		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON105")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "ICON105")
+					(reference "#FLG0104")
 					(unit 1)
 				)
 			)
@@ -7341,7 +7226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 135.89 173.99 0)
 			(effects
 				(font
@@ -7359,10 +7244,6 @@
 					(reference "#PWR0125")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#PWR0125")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7370,7 +7251,7 @@
 		(lib_id "V2_Mechanical:Fiducial_Paste")
 		(at 276.225 176.53 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7411,16 +7292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 276.225 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
+		(property "Description" "Fiducial Marker"
 			(at 276.225 176.53 0)
 			(effects
 				(font
@@ -7432,10 +7304,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "FID103")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "FID103")
 					(unit 1)
 				)
@@ -7486,7 +7354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 116.84 55.88 0)
 			(effects
 				(font
@@ -7501,10 +7369,6 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0104")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "#PWR0104")
 					(unit 1)
 				)
@@ -7555,7 +7419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 50.8 167.64 0)
 			(effects
 				(font
@@ -7573,10 +7437,6 @@
 					(reference "#FLG0103")
 					(unit 1)
 				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
-					(reference "#FLG0103")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -7584,7 +7444,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 228.6 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7634,22 +7494,9 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 228.6 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON102")
-					(unit 1)
-				)
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/24a9dc0c-cb3c-464a-a734-f09bf949d71a"
 					(reference "ICON102")
 					(unit 1)
 				)
