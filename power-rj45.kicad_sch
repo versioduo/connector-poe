@@ -427,6 +427,112 @@
 				)
 			)
 		)
+		(symbol "V2_Artwork:Arrow_In"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "ICON"
+				(at -2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "Arrow_In"
+				(at -2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "V2_Artwork:Arrow_In"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "V2_Artwork:Logo_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Arrow_In_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0.508) (xy 0 0) (xy -0.508 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.7961)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "V2_Artwork:Arrow_Out"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -523,160 +629,6 @@
 				(circle
 					(center 0 0)
 					(radius 1.7961)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-		)
-		(symbol "V2_Artwork:Plug"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "ICON"
-				(at -2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "Plug"
-				(at -2.54 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "V2_Artwork:Plug_Small"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at -0.1778 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "V2_Artwork:Logo_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Plug_0_1"
-				(arc
-					(start -0.1778 -0.762)
-					(mid 0.379 -0.5314)
-					(end 0.6096 0.0254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.1778 -0.762) (xy -0.1778 0.7874)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.1778 -0.508) (xy -0.6858 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.1778 0.508) (xy -0.6858 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.6096 0) (xy 0.8382 0) (xy 0.8128 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 1.7961)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.6096 0.0508)
-					(mid 0.3812 0.5769)
-					(end -0.1524 0.7874)
 					(stroke
 						(width 0)
 						(type default)
@@ -789,112 +741,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-		)
-		(symbol "V2_Artwork:Socket"
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "ICON"
-				(at -2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "Socket"
-				(at -2.54 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "V2_Artwork:Socket_Small"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at -0.1778 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "V2_Artwork:Logo_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Socket_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.7961)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Socket_1_1"
-				(circle
-					(center -0.762 0)
-					(radius 0.254)
-					(stroke
-						(width -0.0001)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0.762 0)
-					(radius 0.254)
-					(stroke
-						(width -0.0001)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
@@ -4937,7 +4783,7 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:Plus")
-		(at 252.7351 148.6963 0)
+		(at 252.73 146.05 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4946,7 +4792,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f6b56b8-c613-4474-a8d0-bddcb82e6fa8")
 		(property "Reference" "ICON103"
-			(at 255.9101 148.0613 0)
+			(at 255.905 145.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4955,7 +4801,7 @@
 			)
 		)
 		(property "Value" "Plus"
-			(at 255.9101 150.6013 0)
+			(at 255.905 147.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4964,7 +4810,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:Plus_Small"
-			(at 252.7351 156.3163 0)
+			(at 252.73 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4973,7 +4819,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.7351 148.6963 0)
+			(at 252.73 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,7 +4828,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.7351 148.6963 0)
+			(at 252.73 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5195,73 +5041,8 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Artwork:Socket")
-		(at 252.73 179.07 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d4bdecb-eb37-4f8e-86e8-4716c9b1c977")
-		(property "Reference" "ICON108"
-			(at 255.27 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Socket"
-			(at 250.19 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "V2_Artwork:Socket_Small"
-			(at 252.73 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.5522 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "V2_Artwork:Arrow_Out")
-		(at 252.73 166.37 0)
+		(at 252.73 157.48 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5270,7 +5051,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d6debc0-d60c-42fa-b0f5-8ee79162d389")
 		(property "Reference" "ICON111"
-			(at 256.54 166.3699 0)
+			(at 256.54 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5279,7 +5060,7 @@
 			)
 		)
 		(property "Value" "Arrow_Out"
-			(at 250.19 171.45 0)
+			(at 250.19 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5289,7 +5070,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:Arrow_Out"
-			(at 252.73 173.99 0)
+			(at 252.73 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5298,7 +5079,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 166.37 0)
+			(at 252.73 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5307,7 +5088,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 166.37 0)
+			(at 252.73 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5408,6 +5189,80 @@
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
 					(reference "J102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_Artwork:Arrow_Out")
+		(at 187.96 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6498fb84-a13e-438d-a3d9-4fdd7bb9a001")
+		(property "Reference" "ICON104"
+			(at 191.77 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Arrow_Out"
+			(at 185.42 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "V2_Artwork:Arrow_Out"
+			(at 187.96 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 187.96 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON104")
 					(unit 1)
 				)
 			)
@@ -6449,7 +6304,7 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:24V")
-		(at 252.73 162.56 0)
+		(at 252.73 153.67 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6458,7 +6313,7 @@
 		(fields_autoplaced yes)
 		(uuid "bbe3337a-17bc-44ab-a017-0175fad49556")
 		(property "Reference" "ICON107"
-			(at 255.27 162.56 0)
+			(at 255.27 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6467,7 +6322,7 @@
 			)
 		)
 		(property "Value" "24V"
-			(at 252.73 167.64 0)
+			(at 252.73 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6477,7 +6332,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:24V"
-			(at 252.73 170.18 0)
+			(at 252.73 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,7 +6341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 162.56 0)
+			(at 252.73 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6495,7 +6350,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.73 162.56 0)
+			(at 252.73 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6924,71 +6779,6 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Artwork:Plug")
-		(at 252.73 153.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7efeb2b-31e8-442b-a303-de30df9d8318")
-		(property "Reference" "ICON109"
-			(at 255.27 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Plug"
-			(at 250.19 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "V2_Artwork:Plug_Small"
-			(at 252.73 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.5522 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "ICON109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 64.77 82.55 90)
 		(unit 1)
@@ -7055,7 +6845,7 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:Plus")
-		(at 252.7232 174.0157 0)
+		(at 252.73 162.56 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -7064,7 +6854,7 @@
 		(fields_autoplaced yes)
 		(uuid "eac24763-ca3d-47b7-9373-d53bca4911bb")
 		(property "Reference" "ICON105"
-			(at 255.8982 173.3807 0)
+			(at 255.905 161.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7073,7 +6863,7 @@
 			)
 		)
 		(property "Value" "Plus"
-			(at 255.8982 175.9207 0)
+			(at 255.905 164.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7082,7 +6872,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:Plus_Small"
-			(at 252.7232 181.6357 0)
+			(at 252.73 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,7 +6881,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.7232 174.0157 0)
+			(at 252.73 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7100,7 +6890,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 252.7232 174.0157 0)
+			(at 252.73 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7435,6 +7225,80 @@
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
 					(reference "#FLG0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_Artwork:Arrow_In")
+		(at 187.96 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd47ea83-79d5-4384-8ee2-f8e21cc93432")
+		(property "Reference" "ICON101"
+			(at 190.5 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Arrow_In"
+			(at 185.42 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "V2_Artwork:Arrow_In"
+			(at 187.96 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 187.96 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "ICON101")
 					(unit 1)
 				)
 			)

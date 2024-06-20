@@ -2385,171 +2385,6 @@
 			(uuid "9a47b0fc-261a-44f7-9f78-0e719014f392")
 		)
 	)
-	(footprint "V2_Artwork:Socket_Small"
-		(layer "F.Cu")
-		(uuid "295a0f29-51f5-40e6-b7cf-8bfc919e3ec8")
-		(at 123.5 113.75)
-		(property "Reference" "ICON108"
-			(at 0 -2.5 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "32d8df75-d59f-4994-9f9e-311eb8ec54e2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Socket"
-			(at 0 2.5 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "43b47b6e-8dc3-417a-93dc-2b869e0074cb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "V2_Artwork:Socket_Small"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "12f9c7d7-8373-4bdd-8195-b7ed0f537dfd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8ed6aacd-bf79-4dfa-9255-2aabf222ca29")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ce068ac0-9def-4115-9670-1e03889dcae6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5942a3ad-b2a7-4cb1-b992-9521c9d81ed4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "exclude_from_bom" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "074e64d7-0404-41c7-ad18-30beeba8254d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "V2_Artwork:Logo_*")
-		(path "/5d4bdecb-eb37-4f8e-86e8-4716c9b1c977")
-		(sheetname "Root")
-		(sheetfile "power-rj45.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
-		(fp_circle
-			(center 0 -0.225)
-			(end 0.1 -0.225)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.Cu")
-			(uuid "3782a7c7-61dd-42f7-aa65-064c33060cac")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 0.7 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Cu")
-			(uuid "16c9d587-a914-40a9-a46d-bf50a34b41f6")
-		)
-		(fp_circle
-			(center 0 0.225)
-			(end 0.1 0.225)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.Cu")
-			(uuid "1dc492fa-6db6-40a2-b188-02f11356b070")
-		)
-		(fp_circle
-			(center 0 -0.225)
-			(end 0.1 -0.225)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.Mask")
-			(uuid "35a7b005-8c68-4862-b04c-cb340130f9c6")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 0.7 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Mask")
-			(uuid "049556cc-7b42-4766-b5f0-f34cfc7d8b73")
-		)
-		(fp_circle
-			(center 0 0.225)
-			(end 0.1 0.225)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.Mask")
-			(uuid "9ae6dc0e-8c1d-434b-8503-de23364fb06b")
-		)
-	)
 	(footprint "V2_Fiducial:Fiducial_0.5mm_Mask1mm_Paste"
 		(layer "F.Cu")
 		(uuid "37717af9-2b13-477d-b384-0fa3223104b8")
@@ -3151,6 +2986,142 @@
 					(xy 151.45 98.8)
 				)
 			)
+		)
+	)
+	(footprint "V2_Artwork:Arrow_In"
+		(layer "F.Cu")
+		(uuid "64446ff0-41a7-45aa-a389-fa596d19458c")
+		(at 123.5 113.75)
+		(property "Reference" "ICON101"
+			(at 0 -2.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b81c8975-2afb-436b-8115-b1d6aad185da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Arrow_In"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19d54bc9-9652-4c3f-8179-66438afc553b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "V2_Artwork:Arrow_In"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "858cf95f-dba5-467a-9365-148555b8ddce")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1119865-77a0-4112-8cd6-fad712fe1750")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ac5865e-016f-411a-8849-3822b8ea9800")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa0a6fb8-9863-4ffc-b7f1-1a4c6e9455ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "V2_Artwork:Logo_*")
+		(path "/fd47ea83-79d5-4384-8ee2-f8e21cc93432")
+		(sheetname "Root")
+		(sheetfile "power-rj45.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(fp_arc
+			(start -0.6 -0.36)
+			(mid 0.699714 0)
+			(end -0.6 0.36)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Cu")
+			(uuid "43023205-68e6-47bc-b41e-d6df711f1684")
+		)
+		(fp_poly
+			(pts
+				(xy -0.3 0.2) (xy -0.3 0.075) (xy -0.95 0.075) (xy -0.95 -0.075) (xy -0.3 -0.075) (xy -0.3 -0.2)
+				(xy -0.05 0)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "ef950830-2955-4832-85ea-a521c9738789")
+		)
+		(fp_arc
+			(start -0.6 -0.36)
+			(mid 0.699714 0)
+			(end -0.6 0.36)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Mask")
+			(uuid "198c94fd-d6fe-49de-bff7-cdaf66425f74")
+		)
+		(fp_poly
+			(pts
+				(xy -0.3 0.2) (xy -0.3 0.075) (xy -0.95 0.075) (xy -0.95 -0.075) (xy -0.3 -0.075) (xy -0.3 -0.2)
+				(xy -0.05 0)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "b3bfcae2-cd9e-4c62-b5a0-b8fb0cbd2b0a")
 		)
 	)
 	(footprint "V2_Connector_WAGO:2065-100"
@@ -7778,6 +7749,140 @@
 			)
 		)
 	)
+	(footprint "V2_Artwork:Arrow_Out"
+		(layer "F.Cu")
+		(uuid "d19c13ba-ee5c-4a4d-8260-5ccaa56d99a3")
+		(at 184 113.75)
+		(property "Reference" "ICON104"
+			(at 0 -2.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "58d356a1-a0d3-497d-b715-021767fd1d93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Arrow_Out"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d057302-a74f-40d9-9f48-b051c8d914c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "V2_Artwork:Arrow_Out"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1df4f7f1-75d1-496c-9430-cf50705f8cff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d11fa361-01b0-44ac-ad81-6f14341b3c0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34fff523-7cc4-4120-b350-f7f28346b3f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0123e28f-9dec-48a5-be1e-1e353bb62386")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "V2_Artwork:Logo_*")
+		(path "/6498fb84-a13e-438d-a3d9-4fdd7bb9a001")
+		(sheetname "Root")
+		(sheetfile "power-rj45.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(fp_arc
+			(start 0.6 0.36)
+			(mid -0.699714 0)
+			(end 0.6 -0.36)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Cu")
+			(uuid "c012c841-4538-460c-88e8-010b69e3b9db")
+		)
+		(fp_poly
+			(pts
+				(xy 0.7 0.2) (xy 0.7 0.075) (xy 0.05 0.075) (xy 0.05 -0.075) (xy 0.7 -0.075) (xy 0.7 -0.2) (xy 0.95 0)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "308edc47-fd15-4f47-a5d5-5cddb446974e")
+		)
+		(fp_arc
+			(start 0.6 0.36)
+			(mid -0.699714 0)
+			(end 0.6 -0.36)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Mask")
+			(uuid "4b63eaa5-70f9-439b-9b60-75ba0cd9b35d")
+		)
+		(fp_poly
+			(pts
+				(xy 0.7 0.2) (xy 0.7 0.075) (xy 0.05 0.075) (xy 0.05 -0.075) (xy 0.7 -0.075) (xy 0.7 -0.2) (xy 0.95 0)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "adab0cd3-9e71-449a-ab86-635307bb95e7")
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d442958e-3110-4f98-9e48-145447437531")
@@ -8475,155 +8580,6 @@
 			(rotate
 				(xyz -90 0 0)
 			)
-		)
-	)
-	(footprint "V2_Artwork:Plug_Small"
-		(layer "F.Cu")
-		(uuid "db6ee508-b3ce-407c-a9e3-2f57b822b9ca")
-		(at 184 113.75 180)
-		(property "Reference" "ICON109"
-			(at 0 -2.5 180)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "8e4f5a4d-76e8-4af9-8a4d-ebfe45e92cd3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "Plug"
-			(at 0 2.5 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9994ae2c-cdd4-4e09-a6c1-ab3ac0ca74fd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "V2_Artwork:Plug_Small"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8f47080f-b9fa-4be3-8938-811842ced823")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "56b1c34f-e366-4306-9648-c00ee1a01e10")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "991737ee-555a-478a-9db6-34b054bd1f68")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1bec04e-7ab8-4b5a-b88a-e62b3c4663fb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "exclude_from_bom" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f5d1b3b3-425d-480c-9a76-02abea53d5fa")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "V2_Artwork:Logo_*")
-		(path "/e7efeb2b-31e8-442b-a303-de30df9d8318")
-		(sheetname "Root")
-		(sheetfile "power-rj45.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
-		(fp_circle
-			(center 0 0)
-			(end 0.7 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Cu")
-			(uuid "10dfb3f7-fee4-4956-b745-ea4c4fe09ad7")
-		)
-		(fp_poly
-			(pts
-				(xy -0.375 -0.3) (xy -0.075 -0.3) (xy -0.075 -0.4) (xy 0.05 -0.4) (xy 0.3 -0.225) (xy 0.3 -0.075)
-				(xy 0.475 -0.075) (xy 0.475 0.075) (xy 0.3 0.075) (xy 0.3 0.225) (xy 0.05 0.4) (xy -0.075 0.4) (xy -0.075 0.3)
-				(xy -0.375 0.3) (xy -0.375 0.175) (xy -0.075 0.175) (xy -0.075 -0.175) (xy -0.375 -0.175)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.Cu")
-			(uuid "8f2817ec-c8e3-46c3-975d-f5313f685ec1")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 0.7 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.Mask")
-			(uuid "bac997ab-68bc-44da-9fec-16f576b70618")
-		)
-		(fp_poly
-			(pts
-				(xy -0.375 -0.3) (xy -0.075 -0.3) (xy -0.075 -0.4) (xy 0.05 -0.4) (xy 0.3 -0.225) (xy 0.3 -0.075)
-				(xy 0.475 -0.075) (xy 0.475 0.075) (xy 0.3 0.075) (xy 0.3 0.225) (xy 0.05 0.4) (xy -0.075 0.4) (xy -0.075 0.3)
-				(xy -0.375 0.3) (xy -0.375 0.175) (xy -0.075 0.175) (xy -0.075 -0.175) (xy -0.375 -0.175)
-			)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-			(fill solid)
-			(layer "F.Mask")
-			(uuid "e50bcaf3-6d51-4841-8832-5ae15c768aea")
 		)
 	)
 	(footprint "V2_Connector_WAGO:2065-100"
