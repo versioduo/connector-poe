@@ -1,6 +1,6 @@
 # connector-poe
 
-⚡ Power Adapter / V2 Link RJ45
+⚡ V2 Link + Power Over Ethernet Mode B 
 
 ## Board
 
