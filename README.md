@@ -1,15 +1,15 @@
-# power-rj45-hardware
+# connector-poe
 
 ⚡ Power Adapter / V2 Link RJ45
 
 ## Board
 
-![board](power-rj45-board.png?raw=true)
+![board](connector-poe-board.png?raw=true)
 
 ## Schematic
 
-[PDF](power-rj45.pdf)
+[PDF](connector-poe.pdf)
 
 ## Bill Of Materials
 
-[Interactive BOM](https://htmlpreview.github.io/?https://github.com/versioduo/power-rj45-hardware/main/power-rj45-bom.html)
+[Interactive BOM](https://htmlpreview.github.io/?https://github.com/versioduo/connector-poe/main/connector-poe-bom.html)

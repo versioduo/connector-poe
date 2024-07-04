@@ -5,11 +5,11 @@
 	(uuid "6c8448b4-b04d-47e1-934e-e40cbe27a7be")
 	(paper "A4")
 	(title_block
-		(title "V2 power RJ45")
-		(date "2024-06-20")
+		(title "V2 connector PoE")
+		(date "2024-07-04")
 		(rev "4")
 		(company "Versio Duo")
-		(comment 1 "Power Supply")
+		(comment 1 "V2 Link  + PoE Mode B")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -5198,7 +5198,7 @@
 		(lib_id "V2_Artwork:Arrow_Out")
 		(at 187.96 179.07 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -5242,15 +5242,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 187.96 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 187.96 179.07 0)
 			(effects
 				(font
@@ -7234,7 +7225,7 @@
 		(lib_id "V2_Artwork:Arrow_In")
 		(at 187.96 173.99 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -7278,15 +7269,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 187.96 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 187.96 173.99 0)
 			(effects
 				(font
