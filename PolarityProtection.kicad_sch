@@ -1,20 +1,24 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "e07dbbfb-b12a-4112-9bb2-28b6ea258768")
 	(paper "A4")
 	(title_block
 		(title "Polarity Protection")
-		(date "2023-08-08")
-		(rev "2")
+		(date "2025-10-24")
+		(rev "3")
 		(company "Versio Duo")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -84,10 +88,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -96,10 +100,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -145,30 +149,33 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -267,6 +274,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "V2_Power_Management:LM74502-Q1"
 			(exclude_from_sim no)
@@ -317,15 +325,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TSOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "LM74502-Q1_0_1"
 				(rectangle
 					(start -12.7 10.16)
@@ -340,6 +339,42 @@
 				)
 			)
 			(symbol "LM74502-Q1_1_1"
+				(pin input line
+					(at -15.24 7.62 0)
+					(length 2.54)
+					(name "VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "VCAP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at -15.24 -2.54 0)
 					(length 2.54)
@@ -351,6 +386,42 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "OV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "GATE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -378,7 +449,8 @@
 				)
 				(pin no_connect line
 					(at 5.08 -25.4 0)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name ""
 						(effects
 							(font
@@ -387,78 +459,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -15.24 2.54 0)
-					(length 2.54)
-					(name "VCAP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 7.62 0)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 12.7 270)
-					(length 2.54)
-					(name "GATE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -7.62 0)
-					(length 2.54)
-					(name "OV"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -485,9 +485,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "V2_Transistor_FET:BSC010N04LS"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -538,28 +541,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TDSON*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "BSC010N04LS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -574,7 +556,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -598,34 +592,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -656,6 +626,63 @@
 						(type outline)
 					)
 				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
@@ -680,59 +707,8 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
 			(symbol "BSC010N04LS_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -769,13 +745,36 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -866,103 +865,32 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
+	)
+	(rectangle
+		(start 101.6 69.85)
+		(end 195.58 144.78)
+		(stroke
+			(width 0)
+			(type dash)
 		)
+		(fill
+			(type none)
+		)
+		(uuid 43a126c4-f9a9-49a9-8814-f21d47831e7d)
+	)
+	(text "(100kΩ + 3.9kΩ) × 1.25V (threshold)\n---------------------- = 33.3V Overvoltage Protection\n             3.9kΩ"
+		(exclude_from_sim no)
+		(at 118.11 140.462 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d8d4ba4-cc9f-4804-82a6-16f06e9640b7")
 	)
 	(junction
 		(at 121.92 86.36)
@@ -977,16 +905,16 @@
 		(uuid "3a6a18da-5399-4fad-a720-c050f950a8b6")
 	)
 	(junction
-		(at 167.64 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3af2a871-5041-4404-99e9-6bf7c2cccea7")
-	)
-	(junction
 		(at 135.89 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60c4afb3-3c95-41c3-a5f0-867d9af74c89")
+	)
+	(junction
+		(at 151.13 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9afb8833-7040-4238-8ee6-d0a0db692e39")
 	)
 	(junction
 		(at 121.92 114.3)
@@ -1004,7 +932,7 @@
 		(at 166.37 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fcdd7879-9523-4bcf-bf2d-c180de3dc18b")
+		(uuid "e03fe980-c759-42cf-b8f4-1ae46a5bb660")
 	)
 	(wire
 		(pts
@@ -1018,13 +946,13 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 86.36) (xy 186.69 86.36)
+			(xy 156.21 86.36) (xy 166.37 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1527a5eb-edf2-40e8-897e-a5e67637858a")
+		(uuid "0e50c332-bf4a-48a9-a6c2-fafc43aa93d9")
 	)
 	(wire
 		(pts
@@ -1038,6 +966,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 86.36) (xy 194.31 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37a795dc-4d49-4a76-a7bb-a5c9ad4ccc79")
+	)
+	(wire
+		(pts
 			(xy 127 86.36) (xy 135.89 86.36)
 		)
 		(stroke
@@ -1045,6 +983,16 @@
 			(type default)
 		)
 		(uuid "44aed349-d187-42ec-8cb3-469ebc3dbf03")
+	)
+	(wire
+		(pts
+			(xy 151.13 93.98) (xy 171.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6976803c-88dd-4d02-b54a-5a531b0aa90c")
 	)
 	(wire
 		(pts
@@ -1058,13 +1006,13 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 86.36) (xy 166.37 86.36)
+			(xy 166.37 86.36) (xy 166.37 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "988ad8d4-7cd3-44b3-83c1-bd1e38f152e0")
+		(uuid "9bae42dd-6636-4144-a054-bdce49703e00")
 	)
 	(wire
 		(pts
@@ -1098,26 +1046,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 86.36) (xy 167.64 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dad6cc54-f5a0-45a7-805b-1befdd14f945")
-	)
-	(wire
-		(pts
-			(xy 166.37 86.36) (xy 166.37 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1275d20-1429-4d38-8b3c-462caad3f734")
-	)
-	(wire
-		(pts
 			(xy 127 109.22) (xy 127 86.36)
 		)
 		(stroke
@@ -1136,33 +1064,8 @@
 		)
 		(uuid "f7b15bbd-fcff-4c5f-910b-59112e72fba5")
 	)
-	(rectangle
-		(start 101.6 66.04)
-		(end 187.96 143.51)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 43a126c4-f9a9-49a9-8814-f21d47831e7d)
-	)
-	(text "26V Overvoltage Protection\n\n26.6V / 100 * 4.7 => 1.25V threshold"
-		(exclude_from_sim no)
-		(at 115.57 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8bdf24b-1922-4caf-8868-fe9c720320c3")
-	)
 	(label "Gate"
-		(at 151.13 93.98 0)
-		(fields_autoplaced yes)
+		(at 157.48 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1174,7 +1077,6 @@
 	)
 	(label "Overvoltage"
 		(at 124.46 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1184,10 +1086,20 @@
 		)
 		(uuid "56a4fb08-4d8b-44b4-92c7-8ba80474de0b")
 	)
+	(label "Source"
+		(at 163.83 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "f9c14fdb-e355-490c-91e2-44353ecd08f2")
+	)
 	(hierarchical_label "Input"
 		(shape input)
 		(at 102.87 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1198,8 +1110,7 @@
 	)
 	(hierarchical_label "Output"
 		(shape output)
-		(at 186.69 86.36 0)
-		(fields_autoplaced yes)
+		(at 194.31 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1216,10 +1127,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3c3532d9-fd7c-47f2-a260-a3e108fec98e")
 		(property "Reference" "Q201"
-			(at 151.13 80.01 90)
+			(at 149.606 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1227,7 +1137,7 @@
 			)
 		)
 		(property "Value" "BSC010N04LS"
-			(at 151.13 82.55 90)
+			(at 153.924 82.042 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1276,71 +1186,6 @@
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
 					(reference "Q201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 167.64 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "415ef730-978f-4f57-88f4-3fc2d7787638")
-		(property "Reference" "#FLG0201"
-			(at 167.64 84.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 167.64 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 167.64 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 167.64 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f2d34ea-de85-45eb-93b1-b8c4572087e6")
-		)
-		(instances
-			(project "power-rj45"
-				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "#FLG0201")
 					(unit 1)
 				)
 			)
@@ -1589,7 +1434,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4k7"
+		(property "Value" "3k9"
 			(at 114.3 118.11 0)
 			(effects
 				(font
@@ -1635,6 +1480,79 @@
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
 					(reference "R202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_Transistor_FET:BSC010N04LS")
+		(at 171.45 88.9 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb69ecc8-ebd5-4e8f-b6bf-ddddfffd282b")
+		(property "Reference" "Q301"
+			(at 169.672 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BSC010N04LS"
+			(at 174.244 82.042 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_Package_TO_SOT_SMD:TDSON-8-FL"
+			(at 169.545 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1040d0e7-4723-44be-87fb-1bd054751e49")
+		)
+		(pin "4"
+			(uuid "5e6c0727-5298-478c-9cb8-2d42b692cdf0")
+		)
+		(pin "5"
+			(uuid "f02158b1-92f4-40f6-8079-74d788044b51")
+		)
+		(instances
+			(project "connector-poe"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
+					(reference "Q301")
 					(unit 1)
 				)
 			)
