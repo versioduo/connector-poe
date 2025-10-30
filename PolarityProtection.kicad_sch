@@ -1128,7 +1128,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c3532d9-fd7c-47f2-a260-a3e108fec98e")
-		(property "Reference" "Q201"
+		(property "Reference" "Q301"
 			(at 149.606 80.01 90)
 			(effects
 				(font
@@ -1185,7 +1185,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "Q201")
+					(reference "Q301")
 					(unit 1)
 				)
 			)
@@ -1200,7 +1200,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55ab273a-1406-486a-88c1-7d36c29bdf12")
-		(property "Reference" "U201"
+		(property "Reference" "U301"
 			(at 157.0944 119.38 0)
 			(effects
 				(font
@@ -1272,7 +1272,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "U201")
+					(reference "U301")
 					(unit 1)
 				)
 			)
@@ -1287,7 +1287,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "611053b4-381e-47a0-82f2-d4ec16886b96")
-		(property "Reference" "R201"
+		(property "Reference" "R301"
 			(at 114.3 110.49 0)
 			(effects
 				(font
@@ -1341,7 +1341,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "R201")
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -1356,7 +1356,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "85cb2f54-d0ec-4372-a558-bbd2645e0d6e")
-		(property "Reference" "C201"
+		(property "Reference" "C301"
 			(at 128.27 100.33 0)
 			(effects
 				(font
@@ -1410,7 +1410,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "C201")
+					(reference "C301")
 					(unit 1)
 				)
 			)
@@ -1425,7 +1425,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96b2a52b-3e29-437b-ac70-1d4e87143c1c")
-		(property "Reference" "R202"
+		(property "Reference" "R302"
 			(at 114.3 115.57 0)
 			(effects
 				(font
@@ -1479,7 +1479,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "R202")
+					(reference "R302")
 					(unit 1)
 				)
 			)
@@ -1495,7 +1495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cb69ecc8-ebd5-4e8f-b6bf-ddddfffd282b")
-		(property "Reference" "Q301"
+		(property "Reference" "Q302"
 			(at 169.672 80.01 90)
 			(effects
 				(font
@@ -1552,7 +1552,7 @@
 		(instances
 			(project "connector-poe"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "Q301")
+					(reference "Q302")
 					(unit 1)
 				)
 			)
@@ -1567,7 +1567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1ca81e7-e280-46ee-99b0-6ac46792b5ff")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR0302"
 			(at 151.13 125.73 0)
 			(effects
 				(font
@@ -1618,7 +1618,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "#PWR0202")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -1633,7 +1633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5e0f8c4-f9b9-4645-9b9e-1bb2dd019e15")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR0301"
 			(at 121.92 125.73 0)
 			(effects
 				(font
@@ -1683,7 +1683,7 @@
 		(instances
 			(project "power-rj45"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/e1a18e88-9abf-461b-8346-1c1c4b1e9326"
-					(reference "#PWR0201")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
